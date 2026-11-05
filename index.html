@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f8f5f0">
+<title>For Nerst — a little place for us</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<nav>
+ <div class="wrap" style="display:flex;align-items:center;justify-content:space-between">
+  <a class="brand" href="#home">FOR <span>NERST</span> ♡</a>
+  <button class="menu" id="menuBtn" aria-label="เปิดเมนู">☰</button>
+  <div class="navlinks" id="navlinks">
+   <a href="#letter">จดหมาย</a><a href="#memories">ความทรงจำ</a><a href="#days">วันของเรา</a><a href="#quiz">คำถาม</a><a href="#game">เกมเล็ก ๆ</a>
+  </div>
+ </div>
+</nav>
+<main>
+ <div class="wrap">
+  <header class="hero" id="home">
+   <div>
+    <div class="eyebrow">A LITTLE SURPRISE, JUST FOR YOU</div>
+    <h1>To my<br><em>favorite</em> person.</h1>
+    <p class="lead">มีพื้นที่เล็ก ๆ ตรงนี้ ที่ตั้งใจทำขึ้นมาเพื่อเธอโดยเฉพาะ<br>ค่อย ๆ เลื่อนดูนะ มีอะไรอยากบอกเยอะเลย ♡</p>
+    <div class="actions"><a class="btn" href="#letter">เริ่มเปิดเซอร์ไพรส์ ↗</a><a class="btn ghost" href="#memories">ดูความทรงจำของเรา</a></div>
+   </div>
+   <div class="hero-art">
+    <div class="float-dot dot1"></div><div class="float-dot dot2"></div>
+    <div class="photo-stack">
+     <div class="tape"></div>
+     <div class="photo-main">
+      <img id="heroPhoto" alt="รูปของเรา">
+      <div class="placeholder" id="heroPlaceholder"><span>OUR LITTLE WORLD<br>♡</span></div>
+     </div>
+     <div class="note"><small>A NOTE FOR YOU</small>you make days softer.</div>
+    </div>
+   </div>
+  </header>
+ </div>
+ <section class="letter-section" id="letter">
+  <div class="wrap">
+   <div class="section-head"><div class="kicker">01 / A LETTER</div><h2>มีจดหมายถึงเธอ</h2><p>กดที่ซองจดหมาย แล้วอ่านข้อความจากใจเรา</p></div>
+   <div class="letter-card">
+    <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="เปิดจดหมาย"><div class="env-body"></div><div class="env-flap"></div><div class="seal">♡</div></div>
+    <button class="btn" id="openLetter">เปิดจดหมาย</button>
+    <div class="letter-copy" id="letterCopy">
+     <p>ถึง Nerst,</p>
+     <p>ขอบคุณที่เข้ามาเป็นส่วนหนึ่งในชีวิต ขอบคุณรอยยิ้ม เสียงหัวเราะ และช่วงเวลาธรรมดา ๆ ที่พิเศษขึ้นมาเพราะมีเธออยู่ด้วย</p>
+     <p>เราอาจไม่ได้พูดคำหวานเก่งทุกวัน แต่เราอยากให้รู้ว่าเธอสำคัญกับเรามากแค่ไหน เราอยากคอยอยู่ข้าง ๆ ในวันที่ดี และในวันที่เหนื่อย อยากเป็นพื้นที่สบายใจให้กันและกัน</p>
+     <p>ขอให้เรามีเรื่องราวดี ๆ ให้เก็บไว้ด้วยกันอีกเยอะเลยนะ</p>
+     <p class="sign">รักนะ, จากคนที่ตั้งใจทำเว็บนี้ให้ ♡</p>
+    </div>
+   </div>
+  </div>
+ </section>
+ <section id="memories">
+  <div class="wrap">
+   <div class="section-head"><div class="kicker">02 / OUR MEMORIES</div><h2>เรื่องราวเล็ก ๆ ของเรา</h2><p>รูปภาพตัวอย่างเปลี่ยนเป็นรูปคู่ของเราได้เลย</p></div>
+   <div class="memories">
+    <article class="memory"><div class="memory-img"><img alt="ความทรงจำ 1"><div class="ph"><b>01</b>our first memory ♡</div></div><h3>วันแรก ๆ ของเรา</h3><p>จุดเริ่มต้นของเรื่องราวดี ๆ</p></article>
+    <article class="memory"><div class="memory-img"><img alt="ความทรงจำ 2"><div class="ph"><b>02</b>little happy moments</div></div><h3>วันที่มีความสุข</h3><p>แค่ได้อยู่ด้วยกันก็พิเศษแล้ว</p></article>
+    <article class="memory"><div class="memory-img"><img alt="ความทรงจำ 3"><div class="ph"><b>03</b>more to come...</div></div><h3>ความทรงจำต่อจากนี้</h3><p>ยังมีอีกหลายรูปที่เราจะได้ถ่ายด้วยกัน</p></article>
+   </div>
+   <label class="upload-label">＋ เพิ่มรูปภาพของเรา (เลือกได้หลายรูป)
+    <input type="file" id="photoUpload" accept="image/*" multiple>
+   </label>
+  </div>
+ </section>
+ <section class="counter-section" id="days">
+  <div class="wrap">
+   <div class="section-head"><div class="kicker">03 / EVERY DAY WITH YOU</div><h2>เวลาที่เราได้มีกัน</h2><p>ทุกวันที่ผ่านไป คืออีกหนึ่งความทรงจำที่มีค่า</p></div>
+   <div class="counter-box">
+    <div class="time-unit"><strong id="daysNum">—</strong><span>วัน</span></div>
+    <div class="time-unit"><strong id="hoursNum">—</strong><span>ชั่วโมง</span></div>
+    <div class="time-unit"><strong id="minsNum">—</strong><span>นาที</span></div>
+    <div class="time-unit"><strong id="secsNum">—</strong><span>วินาที</span></div>
+   </div>
+   <div class="date-edit">เราเริ่มต้นวันที่ <input type="date" id="anniversaryDate"><button class="btn" id="saveDate">บันทึกวันที่</button></div>
+   <p style="text-align:center;color:#788675;font-size:11px;margin-top:12px">ตั้งวันที่เริ่มคบกันเพื่อให้ตัวนับแสดงผลถูกต้อง</p>
+  </div>
+ </section>
+ <section id="quiz">
+  <div class="wrap">
+   <div class="section-head"><div class="kicker">04 / JUST FOR FUN</div><h2>เธอจำเรื่องของเราได้ไหม?</h2><p>ตอบคำถามเล่น ๆ ไม่มีคะแนนติดลบแน่นอน</p></div>
+   <div class="quiz-wrap">
+    <div class="progress"><span id="quizProgress"></span></div>
+    <div class="kicker" id="quizStep">QUESTION 01 / 04</div>
+    <div class="quiz-question" id="quizQuestion">กิจกรรมที่เราอยากทำด้วยกันมากที่สุดคืออะไร?</div>
+    <div class="answers" id="answers"></div>
+    <div class="feedback" id="quizFeedback"></div>
+    <button class="btn ghost" id="nextQuestion" hidden>ข้อต่อไป →</button>
+   </div>
+  </div>
+ </section>
+ <section style="background:#f0ebe4" id="game">
+  <div class="wrap">
+   <div class="section-head"><div class="kicker">05 / A TINY GAME</div><h2>เลือกหัวใจของเธอ</h2><p>มีหัวใจหนึ่งดวงซ่อนข้อความพิเศษอยู่ ลองเลือกดูสิ</p></div>
+   <div class="game-card">
+    <div class="kicker">PICK ONE HEART</div>
+    <p style="color:var(--muted);font-size:13px">เลือกได้หนึ่งครั้งต่อรอบนะ ♡</p>
+    <div class="game-hearts" id="gameHearts">
+     <button class="heart-choice" aria-label="หัวใจ 1">♡</button><button class="heart-choice" aria-label="หัวใจ 2">♡</button><button class="heart-choice" aria-label="หัวใจ 3">♡</button>
+     <button class="heart-choice" aria-label="หัวใจ 4">♡</button><button class="heart-choice" aria-label="หัวใจ 5">♡</button><button class="heart-choice" aria-label="หัวใจ 6">♡</button>
+    </div>
+    <div class="game-result" id="gameResult">หัวใจดวงไหนจะเป็นของเธอนะ?</div>
+    <button class="btn ghost" id="restartGame">ลองใหม่อีกครั้ง</button>
+   </div>
+  </div>
+ </section>
+</main>
+<footer>made with <b>♡</b> for Nerst · always you</footer>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+
+</body>
+</html>
